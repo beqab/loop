@@ -1,0 +1,540 @@
+@font-face {
+	font-family: 'Conv_DejaVuSans';
+	src: url('fonts/DejaVuSans.eot');
+	src: local('☺'), url('fonts/DejaVuSans.woff') format('woff'), url('fonts/DejaVuSans.ttf') format('truetype'), url('fonts/DejaVuSans.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+body{
+	background: red;
+}
+
+.subjects_nav{
+	position: absolute;
+	top:2vw;
+	left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Conv_DejaVuSans';
+        transform: translateX(-50%);
+
+    ul{
+    	list-style-type: none;
+    	padding: 0px;
+    	margin:0px;
+    	display: flex;
+         
+         li{
+               position: relative;
+              margin: 0 5px;
+               &:before{
+               	position: absolute;
+                 content: '';
+                 height: 2px;
+                 width: 0%;
+                 left: 50%;
+                 background: #fff;
+                 transition:0.3s;
+                 transform: translateX(-50%);
+                 bottom: -3px;
+                 display: block;
+               }
+               &.active:before{
+               
+               	 width: 100%;
+               }
+               &:hover:before{
+               
+               	 width: 100%;
+               }
+         }
+
+    	 a{
+    	 	color: #fff;
+    	 	text-decoration: none;
+    	 	font-family: 'Conv_DejaVuSans';
+    	 	    padding: 5px 10px ;
+    	 	     font-size: calc(6px + 0.6vw);
+
+    	 	 display: inline-block;
+
+
+    	 }
+    }
+
+    .school_or_mine{
+    	margin-top: 2vw;
+
+
+    	 a{
+    	 	color: #fff;
+    	 font-size: calc(5px + 0.6vw);
+    	 	text-decoration: none;
+    	 	padding: 3px 8px 4px;
+    	 	border:1px solid transparent;
+    	 	transition:0.3s;
+    	 	border-radius: 50px;
+    	 	margin: 0 6px;
+
+    	 	&.active{
+            background: #7b2d47;
+            border:1px solid #fff;
+    	 	}
+
+    	 	&:hover{
+    	 		background: #7b2d47;
+            border:1px solid #fff;
+    	 	}
+    	 }
+    }
+}
+
+
+.steps_perent{
+	position: relative;
+	 div{
+	 	cursor: pointer;
+	 	transition:0.3s;
+	 	&:hover{
+	          
+	 		   filter:hue-rotate(20deg);
+           img{
+                  filter:hue-rotate(0deg)
+           
+	 		  
+	 	}
+	 }
+           }
+}
+.steps_perent div a{
+  transition:0.3s;
+}
+
+.steps_perent div a:hover  {
+      
+    transform: translateY(-5px);
+}
+.mth{
+	font-family: 'Conv_DejaVuSans';
+	    background: url(images/bgmth.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: top;
+
+
+    .planet3{
+    position: absolute;
+    left: 30vw;
+    width: 6vw;
+    top: 15vw;
+    animation-name:planet_3;
+    animation-duration:100s;
+        animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.07, -0.19, 1, 1);
+    }
+@keyframes planet_3{
+
+	0%{
+           transform: translate(0px);
+	}
+	25%{
+		transform: translate(200px, 80px);
+	}
+	
+	50%{
+		 transform: translate(400px, 60px);
+	}
+	75%{
+		transform: translate(-200px, -80px);
+	}
+	100%{
+        transform: translate(0px);
+	}
+
+}
+
+    //     background: url(images/bgmth.png);
+    // background: url(images/loopall.png);
+    // background-repeat: no-repeat;
+    // height: 100vh;
+    // background-size: 91%, 94%;
+    // background-position: center -25px;
+
+
+    .ship{
+    position: absolute;
+    width: 3vw;
+    left: 9vw;
+    top: 30vw;
+    display: inline-block;
+    	img{
+    		width: 100%;
+    	}
+    }
+    .point_boll{
+    	 position: absolute;
+    width: 2.5vw;
+     display: inline-block;
+
+       img{
+       	width: 100%;
+       }
+    }
+    .checkpoints1{
+    	   
+       left: 23%;
+    top: 26%;
+   
+    }
+      .checkpoints2{
+    	   
+ left: 34%;
+    top: 15%;
+   
+    }
+      .checkpoints3{
+    	   
+        left: 45%;
+    top: 4%;
+   
+    }
+      .checkpoints4{
+   left: 57%;
+    top: 9%;
+    }
+     .checkpoints5{
+   left: 68%;
+    top: 21%;
+    }
+  .checkpoints6{
+  left: 79%;
+    top: 33%;
+    }
+
+.checkpoints7{
+ left: 9%;
+    top: 17%;
+    }
+    .checkpoints8{
+      left: 24%;
+    top: 29%;
+    }
+    .checkpoints9{
+ left: 41%;
+    top: 22%;
+    }
+    .checkpoints10{
+       left: 56%;
+    top: 10%;
+    }
+     .checkpoints11{
+   left: 71%;
+    top: -3%;
+    }
+    .checkpoints12{
+  left: 8%;
+    top: 12%;
+    }
+    .checkpoints13{
+       left: 22%;
+    top: 1%;
+    }
+    .checkpoints14{
+   left: 37%;
+    top: 10%;
+    }
+    .checkpoints15{
+   left: 50%;
+    top: 21%;
+    }
+    .checkpoints16{
+         left: 63%;
+    top: 32%;
+    }
+    .checkpoints17{
+       left: 77%;
+    top: 44%;
+    }
+     .checkpoints18{
+     left: 11%;
+    top: 0%;
+    }
+     .checkpoints19{
+        left: 29%;
+    top: 11%;
+    }
+     .checkpoints20{
+        left: 48%;
+    top: 24%;
+    }
+     .checkpoints21{
+          left: 67%;
+    top: 37%;
+    }
+     .checkpoints22{
+   left: 75%;
+    top: 58%;
+    }
+     .checkpoints23{
+    left: 58%;
+    top: 49%;
+    }
+     .checkpoints24{
+        left: 41%;
+    top: 40%;
+    }
+    .checkpoints24{
+  left: 42%;
+    top: 40%;
+    }
+    .checkpoints25{
+    left: 26%;
+    top: 32%;
+    }
+    .checkpoints26{
+      left: 10%;
+    top: 23%;
+    }
+    .checkpoints27{
+          left: 30%;
+    top: 11%;
+    }
+    .checkpoints28{
+     left: 47%;
+    top: 1%;
+    }
+
+     .checkpoints29{
+     left: 11%;
+    top: 0%;
+    }
+     .checkpoints30{
+        left: 29%;
+    top: 11%;
+    }
+     .checkpoints31{
+        left: 48%;
+    top: 24%;
+    }
+     .checkpoints32{
+          left: 67%;
+    top: 37%;
+
+}
+    
+
+ 
+    .checkpoints33{
+         left: 16%;
+    top: 19%;
+    }
+    .checkpoints34{
+        left: 47%;
+    top: 32%;
+    }
+    .checkpoints35{
+         left: 15%;
+    top: 34%;
+    }
+    .checkpoints36{
+     left: 46%;
+    top: 16%;
+
+    }
+    .checkpoints37{
+     left: 15%;
+    top: 1%;
+    }
+
+
+     .checkpoints38{
+
+     	   left: 67%;
+    top: 37%;
+    
+    }
+     .checkpoints39{
+       
+    left: 48%;
+    top: 24%;
+    }
+     .checkpoints40{
+     left: 29%;
+    top: 11%;
+    }
+     .checkpoints41{
+           left: 11%;
+    top: 0%;
+
+}
+  .checkpoints42{
+      left: 18%;
+    top: 49%;
+
+}
+  .checkpoints43{
+      left: 6%;
+    top: 37%;
+
+}
+  .checkpoints44{
+       left: 16%;
+    top: 27%;
+
+}
+  .checkpoints45{
+      left: 26%;
+    top: 17%;
+
+}
+  .checkpoints46{
+       left: 37%;
+    top: 6%;
+
+}
+  .checkpoints47{
+    left: 51%;
+    top: 8%;
+
+}
+  .checkpoints48{
+    left: 62%;
+    top: 19%;
+
+}
+  .checkpoints49{
+        left: 73%;
+    top: 30%;
+
+}
+  .checkpoints50{
+     left: 84%;
+    top: 41%;
+
+}
+
+
+
+
+
+
+
+
+
+	     .step1{
+		
+	     display: inline-block;
+    width: 18vw;
+    left: 8.4vw;
+    top: 30.4vw;
+    position: absolute;
+	}
+
+		.step_bg{
+		max-width: 100%;
+	}
+
+	.step2{
+		
+	      display: inline-block;
+    width: 12.5vw;
+    left: 26vw;
+    top: 34.8vw;
+    position: absolute;
+	}
+	.step3{
+		 display: inline-block;
+    width: 10vw;
+    left: 23.7vw;
+    top: 27.6vw;
+    position: absolute;
+	}
+	.step4{    display: inline-block;
+   display: inline-block;
+    width: 14.9vw;
+    left: 23.7vw;
+    top: 21.9vw;
+    position: absolute;
+	}
+	.step5{
+		     display: inline-block;
+    width: 10.1vw;
+    left: 38.5vw;
+    top: 29.2vw;
+    position: absolute;
+	}
+	.step6{
+	display: inline-block;
+    width: 10vw;
+    left: 46vw;
+    top: 26.2vw;
+    position: absolute;
+	}
+	.step7{
+	display: inline-block;
+    width: 12.4vw;
+    left: 36.28vw;
+    top: 16.2vw;
+    position: absolute;
+	}
+	.step8{
+	    display: inline-block;
+    width: 10.1vw;
+    left: 46.4vw;
+    top: 18.9vw;
+    position: absolute;
+	}
+	.step9{
+	display: inline-block;
+    width: 7.6vw;
+    left: 56.47vw;
+    top: 23.2vw;
+    position: absolute;
+	}
+	.step10{
+	    display: inline-block;
+    width: 10vw;
+    left: 63.9vw;
+    top: 27.6vw;
+    position: absolute;
+	}
+
+	.step11{
+	display: inline-block;
+    width: 7.6vw;
+    left: 73.29vw;
+    top: 23.3vw;
+    position: absolute;
+	}
+	.step12{
+		     display: inline-block;
+    width: 10.1vw;
+    left: 63.4vw;
+    top: 17.5vw;
+    position: absolute;
+	}
+	.step13{
+		display: inline-block;
+    width: 19.5vw;
+    left: 56.1vw;
+    top: 9.2vw;
+    position: absolute;
+	}
+
+		.step14{
+	display: inline-block;
+    width: 10vw;
+    left: 75.9vw;
+    top: 14.7vw;
+    position: absolute;
+	}
+
+}
+

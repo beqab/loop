@@ -1,0 +1,367 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Conv_DejaVuSans';
+  src: url("fonts/DejaVuSans.eot");
+  src: local("☺"), url("fonts/DejaVuSans.woff") format("woff"), url("fonts/DejaVuSans.ttf") format("truetype"), url("fonts/DejaVuSans.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background: red; }
+
+.subjects_nav {
+  position: absolute;
+  top: 2vw;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Conv_DejaVuSans';
+  transform: translateX(-50%); }
+  .subjects_nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex; }
+    .subjects_nav ul li {
+      position: relative;
+      margin: 0 5px; }
+      .subjects_nav ul li:before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 0%;
+        left: 50%;
+        background: #fff;
+        transition: 0.3s;
+        transform: translateX(-50%);
+        bottom: -3px;
+        display: block; }
+      .subjects_nav ul li.active:before {
+        width: 100%; }
+      .subjects_nav ul li:hover:before {
+        width: 100%; }
+    .subjects_nav ul a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Conv_DejaVuSans';
+      padding: 5px 10px;
+      font-size: calc(6px + 0.6vw);
+      display: inline-block; }
+  .subjects_nav .school_or_mine {
+    margin-top: 2vw; }
+    .subjects_nav .school_or_mine a {
+      color: #fff;
+      font-size: calc(5px + 0.6vw);
+      text-decoration: none;
+      padding: 3px 8px 4px;
+      border: 1px solid transparent;
+      transition: 0.3s;
+      border-radius: 50px;
+      margin: 0 6px; }
+      .subjects_nav .school_or_mine a.active {
+        background: #7b2d47;
+        border: 1px solid #fff; }
+      .subjects_nav .school_or_mine a:hover {
+        background: #7b2d47;
+        border: 1px solid #fff; }
+
+.steps_perent {
+  position: relative; }
+  .steps_perent div {
+    cursor: pointer;
+    transition: 0.3s; }
+    .steps_perent div:hover {
+      filter: hue-rotate(20deg); }
+      .steps_perent div:hover img {
+        filter: hue-rotate(0deg); }
+
+.steps_perent div a {
+  transition: 0.3s; }
+
+.steps_perent div a:hover {
+  transform: translateY(-5px); }
+
+.mth {
+  font-family: 'Conv_DejaVuSans';
+  background: url(images/bgmth.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-position: top; }
+  .mth .planet3 {
+    position: absolute;
+    left: 30vw;
+    width: 6vw;
+    top: 15vw;
+    animation-name: planet_3;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.07, -0.19, 1, 1); }
+@keyframes planet_3 {
+  0% {
+    transform: translate(0px); }
+  25% {
+    transform: translate(200px, 80px); }
+  50% {
+    transform: translate(400px, 60px); }
+  75% {
+    transform: translate(-200px, -80px); }
+  100% {
+    transform: translate(0px); } }
+  .mth .ship {
+    position: absolute;
+    width: 3vw;
+    left: 9vw;
+    top: 30vw;
+    display: inline-block; }
+    .mth .ship img {
+      width: 100%; }
+  .mth .point_boll {
+    position: absolute;
+    width: 2.5vw;
+    display: inline-block; }
+    .mth .point_boll img {
+      width: 100%; }
+  .mth .checkpoints1 {
+    left: 23%;
+    top: 26%; }
+  .mth .checkpoints2 {
+    left: 34%;
+    top: 15%; }
+  .mth .checkpoints3 {
+    left: 45%;
+    top: 4%; }
+  .mth .checkpoints4 {
+    left: 57%;
+    top: 9%; }
+  .mth .checkpoints5 {
+    left: 68%;
+    top: 21%; }
+  .mth .checkpoints6 {
+    left: 79%;
+    top: 33%; }
+  .mth .checkpoints7 {
+    left: 9%;
+    top: 17%; }
+  .mth .checkpoints8 {
+    left: 24%;
+    top: 29%; }
+  .mth .checkpoints9 {
+    left: 41%;
+    top: 22%; }
+  .mth .checkpoints10 {
+    left: 56%;
+    top: 10%; }
+  .mth .checkpoints11 {
+    left: 71%;
+    top: -3%; }
+  .mth .checkpoints12 {
+    left: 8%;
+    top: 12%; }
+  .mth .checkpoints13 {
+    left: 22%;
+    top: 1%; }
+  .mth .checkpoints14 {
+    left: 37%;
+    top: 10%; }
+  .mth .checkpoints15 {
+    left: 50%;
+    top: 21%; }
+  .mth .checkpoints16 {
+    left: 63%;
+    top: 32%; }
+  .mth .checkpoints17 {
+    left: 77%;
+    top: 44%; }
+  .mth .checkpoints18 {
+    left: 11%;
+    top: 0%; }
+  .mth .checkpoints19 {
+    left: 29%;
+    top: 11%; }
+  .mth .checkpoints20 {
+    left: 48%;
+    top: 24%; }
+  .mth .checkpoints21 {
+    left: 67%;
+    top: 37%; }
+  .mth .checkpoints22 {
+    left: 75%;
+    top: 58%; }
+  .mth .checkpoints23 {
+    left: 58%;
+    top: 49%; }
+  .mth .checkpoints24 {
+    left: 41%;
+    top: 40%; }
+  .mth .checkpoints24 {
+    left: 42%;
+    top: 40%; }
+  .mth .checkpoints25 {
+    left: 26%;
+    top: 32%; }
+  .mth .checkpoints26 {
+    left: 10%;
+    top: 23%; }
+  .mth .checkpoints27 {
+    left: 30%;
+    top: 11%; }
+  .mth .checkpoints28 {
+    left: 47%;
+    top: 1%; }
+  .mth .checkpoints29 {
+    left: 11%;
+    top: 0%; }
+  .mth .checkpoints30 {
+    left: 29%;
+    top: 11%; }
+  .mth .checkpoints31 {
+    left: 48%;
+    top: 24%; }
+  .mth .checkpoints32 {
+    left: 67%;
+    top: 37%; }
+  .mth .checkpoints33 {
+    left: 16%;
+    top: 19%; }
+  .mth .checkpoints34 {
+    left: 47%;
+    top: 32%; }
+  .mth .checkpoints35 {
+    left: 15%;
+    top: 34%; }
+  .mth .checkpoints36 {
+    left: 46%;
+    top: 16%; }
+  .mth .checkpoints37 {
+    left: 15%;
+    top: 1%; }
+  .mth .checkpoints38 {
+    left: 67%;
+    top: 37%; }
+  .mth .checkpoints39 {
+    left: 48%;
+    top: 24%; }
+  .mth .checkpoints40 {
+    left: 29%;
+    top: 11%; }
+  .mth .checkpoints41 {
+    left: 11%;
+    top: 0%; }
+  .mth .checkpoints42 {
+    left: 18%;
+    top: 49%; }
+  .mth .checkpoints43 {
+    left: 6%;
+    top: 37%; }
+  .mth .checkpoints44 {
+    left: 16%;
+    top: 27%; }
+  .mth .checkpoints45 {
+    left: 26%;
+    top: 17%; }
+  .mth .checkpoints46 {
+    left: 37%;
+    top: 6%; }
+  .mth .checkpoints47 {
+    left: 51%;
+    top: 8%; }
+  .mth .checkpoints48 {
+    left: 62%;
+    top: 19%; }
+  .mth .checkpoints49 {
+    left: 73%;
+    top: 30%; }
+  .mth .checkpoints50 {
+    left: 84%;
+    top: 41%; }
+  .mth .step1 {
+    display: inline-block;
+    width: 18vw;
+    left: 8.4vw;
+    top: 30.4vw;
+    position: absolute; }
+  .mth .step_bg {
+    max-width: 100%; }
+  .mth .step2 {
+    display: inline-block;
+    width: 12.5vw;
+    left: 26vw;
+    top: 34.8vw;
+    position: absolute; }
+  .mth .step3 {
+    display: inline-block;
+    width: 10vw;
+    left: 23.7vw;
+    top: 27.6vw;
+    position: absolute; }
+  .mth .step4 {
+    display: inline-block;
+    display: inline-block;
+    width: 14.9vw;
+    left: 23.7vw;
+    top: 21.9vw;
+    position: absolute; }
+  .mth .step5 {
+    display: inline-block;
+    width: 10.1vw;
+    left: 38.5vw;
+    top: 29.2vw;
+    position: absolute; }
+  .mth .step6 {
+    display: inline-block;
+    width: 10vw;
+    left: 46vw;
+    top: 26.2vw;
+    position: absolute; }
+  .mth .step7 {
+    display: inline-block;
+    width: 12.4vw;
+    left: 36.28vw;
+    top: 16.2vw;
+    position: absolute; }
+  .mth .step8 {
+    display: inline-block;
+    width: 10.1vw;
+    left: 46.4vw;
+    top: 18.9vw;
+    position: absolute; }
+  .mth .step9 {
+    display: inline-block;
+    width: 7.6vw;
+    left: 56.47vw;
+    top: 23.2vw;
+    position: absolute; }
+  .mth .step10 {
+    display: inline-block;
+    width: 10vw;
+    left: 63.9vw;
+    top: 27.6vw;
+    position: absolute; }
+  .mth .step11 {
+    display: inline-block;
+    width: 7.6vw;
+    left: 73.29vw;
+    top: 23.3vw;
+    position: absolute; }
+  .mth .step12 {
+    display: inline-block;
+    width: 10.1vw;
+    left: 63.4vw;
+    top: 17.5vw;
+    position: absolute; }
+  .mth .step13 {
+    display: inline-block;
+    width: 19.5vw;
+    left: 56.1vw;
+    top: 9.2vw;
+    position: absolute; }
+  .mth .step14 {
+    display: inline-block;
+    width: 10vw;
+    left: 75.9vw;
+    top: 14.7vw;
+    position: absolute; }
+
+/*# sourceMappingURL=style.css.map */
