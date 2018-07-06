@@ -120,6 +120,54 @@ body{
       
     transform: translateY(-5px);
 }
+
+.planet_with_child{
+  position: absolute;
+  top: 10vw;
+ left: 15vw;
+   .big_planet{
+    position:  relative;
+   }
+   .small_planet{
+     position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(-73%, -49%);
+   }
+
+}
+.small_planet{
+     animation-name:small_planet;
+    animation-duration:10s;
+        animation-iteration-count: infinite;
+            animation-timing-function: liner;
+}
+
+@keyframes small_planet{
+
+  0%{
+          transform: translate(-73%, -49%);
+          z-index: 0;
+  }
+  25%{
+       transform: translate(158%, -49%);
+       
+  }
+  
+  50%{
+      transform: translate(-73%, -49%);
+          z-index: -1;
+  }
+  75%{
+    transform: translate(158%, -49%);
+       z-index: 0;
+  }
+  100%{
+          transform: translate(-73%, -49%);
+          z-index: -1;
+  }
+
+}
 .mth{
 	font-family: 'Conv_DejaVuSans';
 	    background: url(images/bgmth.png);
