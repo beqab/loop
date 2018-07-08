@@ -1,19 +1,217 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>loop</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>loop</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
 <style type="text/css">
   html, body {margin:0; overflow:hidden;}
 
 </style>
-	<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1037366/three.js"></script>
+  <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1037366/three.js"></script>
 <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1037366/CanvasRenderer.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1037366/Projector.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+<style type="text/css">
+  
+ {
+  font: normal 16px/1.5 'Roboto', sans-serif;
+  padding: 130px 0 0 0;
+  background: #f1f1f1;
+}
+
+
+/* RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.chart-skills *,
+.chart-skills::before {
+  box-sizing: border-box;
+}
+
+
+/* CHART-SKILLS STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills {
+  position: absolute;
+  width: 137%;
+  height: 99%;
+  right: 0px;
+  /* overflow: hidden; */
+  transform: translate(-50%, 50%) rotate(179deg);
+  left: 33%;
+  top: -48%;
+}
+
+.chart-skills::before,
+.chart-skills::after {
+  position: absolute;
+}
+
+.chart-skills::before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: 2.4vw solid rgba(211, 211, 211, .3);
+  border-bottom: none;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+}
+
+.chart-skills::after {
+  
+}
+
+.chart-skills li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 2.4vw solid;
+  border-top: none;
+  border-bottom-left-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  transform-origin: 50% 0%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: .4s;
+  animation-timing-function: linear;
+}
+
+.chart-skills li:nth-child(1) {
+  z-index: 4;
+  border-color: green;
+  animation-name: rotate-one;
+}
+
+.chart-skills li:nth-child(2) {
+  z-index: 3;
+  border-color: firebrick;
+  animation-name: rotate-two;
+  animation-delay: .4s;
+}
+
+.chart-skills li:nth-child(3) {
+  z-index: 2;
+  border-color: steelblue;
+  animation-name: rotate-three;
+  animation-delay: .8s;
+}
+
+.chart-skills li:nth-child(4) {
+  z-index: 1;
+  border-color: orange;
+  animation-name: rotate-four;
+  animation-delay: 1.2s;
+}
+
+.chart-skills span {
+  position: absolute;
+  font-size: .85rem;
+  backface-visibility: hidden;
+  animation: fade-in .4s linear forwards;
+}
+
+.chart-skills li:nth-child(1) span {
+  top: 5px;
+  left: 10px;
+  transform: rotate(-21.6deg);
+}
+
+.chart-skills li:nth-child(2) span {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-79.2deg);
+  animation-delay: .4s;
+}
+
+.chart-skills li:nth-child(3) span {
+  top: 18px;
+  left: 10px;
+  transform: rotate(-140.4deg);
+  animation-delay: .8s;
+}
+
+.chart-skills li:nth-child(4) span {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-180deg);
+  animation-delay: 1.2s;
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes rotate-one {
+  100% {
+    transform: rotate(2.6deg);
+    /**
+     * 12% => 21.6deg
+     */
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotate(21.6deg);
+  }
+  100% {
+    transform: rotate(79.2deg);
+    /**
+     * 32% => 57.6deg 
+     * 57.6 + 21.6 => 79.2deg
+     */
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotate(79.2deg);
+  }
+  100% {
+    transform: rotate(140.4deg);
+    /**
+     * 34% => 61.2deg 
+     * 61.2 + 79.2 => 140.4deg
+     */
+  }
+}
+
+@keyframes rotate-four {
+  0% {
+    transform: rotate(140.4deg);
+  }
+  100% {
+    transform: rotate(180deg);
+    /**
+     * 22% => 39.6deg  
+     * 140.4 + 39.6 => 180deg
+     */
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  </style>
 </head>
 
 <body class="mth">
@@ -30,13 +228,15 @@
          </div>
       </div>
       <div class="progrers_sectors">
-           
-      <div class="sector1">
-      <div style="background: red;width: 2px;height: 2px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50px;">
-        
-      </div>
+              <ul class="chart-skills">
+  <li>
 
-      </div>
+  </li>
+</ul>
+
+
+
+
 
 
 
@@ -256,8 +456,8 @@ function doSomething(rand, rand2, startype) {
       <div class="step6">
          <img class="step_bg" src="images/step3.png">
     </div>
-	 <div class="step5">
-    	 <img class="step_bg" src="images/step5.png">
+   <div class="step5">
+       <img class="step_bg" src="images/step5.png">
          <a class="point_boll checkpoints18" href="#">
         <img src="images/checkmth.png">
        </a>
@@ -271,8 +471,8 @@ function doSomething(rand, rand2, startype) {
         <img src="images/checkmth.png">
        </a>
     </div>
-	 <div class="step4">
-    	 <img class="step_bg" src="images/step4.png">
+   <div class="step4">
+       <img class="step_bg" src="images/step4.png">
 
           <a class="point_boll checkpoints12" href="#">
         <img src="images/checkmth.png">
@@ -303,7 +503,7 @@ function doSomething(rand, rand2, startype) {
 
 
      <div class="step3">
-    	 <img class="step_bg" src="images/step3.png">
+       <img class="step_bg" src="images/step3.png">
     </div>
      <div class="step1">
          <img class="step_bg" src="images/step1.png">
@@ -358,7 +558,7 @@ function doSomething(rand, rand2, startype) {
        
 
 
-    	
+      
 
 
     

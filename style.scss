@@ -5,17 +5,178 @@
 	font-weight: normal;
 	font-style: normal;
 }
+#container{
+	position: relative;
+	z-index: -40;
+}
+.comet{
+	position: absolute;
+	top: -20%;
+	left: 50%;
+	animation-name:comet;
+    animation-duration:2s;
 
+    animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01);
+}
 
+// 
+/*========nav>li>a animation*/
+.roll {
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+
+    -webkit-perspective: 400px;
+       -moz-perspective: 400px;
+
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+}
+.roll span {
+    display: block;
+    position: relative;
+    padding: 0 15px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+    .roll:hover span {
+        background: #111;
+        -webkit-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+        -moz-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+    }
+
+.roll span:after {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    border-radius: 10%;
+    left: 0;
+    top: 0;
+    padding: 4px 15px;
+    color: #000;
+    background: #ffffff;
+    font-weight: bold;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+    -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+}
+
+.comet_position2{
+	position: absolute;
+	top: -20%;
+	left: 100%;
+	animation-name:comet_position2;
+    animation-duration:2s;
+    animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01);
+}
+@keyframes comet_position2{
+
+	100%{
+      left: -20%;
+      top: 100%;
+	}
+}
+
+@keyframes comet{
+
+	100%{
+      left: -20%;
+      top: 40%;
+	}
+
+}
 
 
 body{
 	background: red;
 }
+.diagram{
+	 background: #0000ff30;
+    width: 13vw;
+    position: absolute;
+    height: 12.3vw;
+    left: 10.5vw;
+    top: 7.4vw;
+    z-index: 2;
+    .sircules{
+    	    position: absolute;
+    border-radius: 50px;
+    width: 28%;
+    height: 28%;
+    border: 0.4vw solid #7b2d47;
+      .circule1{
+      	position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 32%;
+    width: 32%;
+    transform: translate(-50%, -50%);
+    background: #00aeef;
+    border-radius: 50px;
+      }
+      .circule2{
+      		position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 57%;
+    width: 57%;
+    border: 0.4vw solid #3e5e4b;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+      }
+    }
+    .progrers_sectors{
+    	width: inherit;
+    	height: inherit;
+    	
+    	.sector1{
+    		         width: 160%;
+    border-radius: 50%;
+    position: absolute;
+    border: 2.2vw solid;
+    right: 0px;
+    right: -99%;
+    top: 0%;
+    height: 160%;
+    border: 2.3vw solid red;
+    border-bottom: 2.3vw solid black;
+    transform: translate(-50%, -50%) rotate(-44deg);
+      &:after{
+      	width: inherit;
+      	height: inherit;
+      	
+      	position: absolute;
+      	transform: translate(-50%, -50%);
+        border-radius: 1000px;
+        border: 2.2vw solid red ; 
+
+        border-bottom: #fff;
+
+
+      }
+    	}
+    }
+  
+}
+.diacramisskechi{
+	position: absolute; 
+	z-index:2;
+	left: 90px;
+	position: absolute; left: 90px; top: 100px;
+	 top: 100px;
+	  width: 17vw;
+}
 
 .subjects_nav{
 	position: absolute;
 	top:2vw;
+	z-index: 2;
 	left: 50%;
     display: flex;
     flex-direction: column;
@@ -60,7 +221,7 @@ body{
     	 	text-decoration: none;
     	 	font-family: 'Conv_DejaVuSans';
     	 	    padding: 5px 10px ;
-    	 	     font-size: calc(6px + 0.6vw);
+    	 	     font-size: calc(7px + 0.6vw);
 
     	 	 display: inline-block;
 
@@ -124,15 +285,22 @@ body{
 .planet_with_child{
   position: absolute;
   top: 10vw;
+  width: 11vw;
  left: 15vw;
+ animation-name:planet_with_child;
+    animation-duration:120s;
+        animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01);
    .big_planet{
     position:  relative;
+    max-width: 100%
    }
    .small_planet{
-     position: absolute;
+	 position: absolute;
     left: 0px;
+    width: 34%;
     top: 50%;
-    transform: translate(-73%, -49%);
+    transform: translate(-50%, -50%);
    }
 
 }
@@ -140,31 +308,56 @@ body{
      animation-name:small_planet;
     animation-duration:10s;
         animation-iteration-count: infinite;
-            animation-timing-function: liner;
+    animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01);
+}
+
+
+@keyframes planet_with_child{
+
+	0%{
+           transform: translate(0px);
+	}
+	25%{
+		transform: translate(-200px, 80px);
+	}
+	
+	50%{
+		 transform: translate(400px, -60px);
+	}
+	75%{
+		transform: translate(-200px, -80px);
+	}
+	100%{
+        transform: translate(0px);
+	}
+
 }
 
 @keyframes small_planet{
 
   0%{
-          transform: translate(-73%, -49%);
+         left:-20%;
           z-index: 0;
+          top: 20%;
   }
   25%{
-       transform: translate(158%, -49%);
        
+        z-index: 0;
   }
   
   50%{
-      transform: translate(-73%, -49%);
+     left:120%;
           z-index: -1;
+          top: 80%
   }
   75%{
-    transform: translate(158%, -49%);
-       z-index: 0;
+    
+       z-index: -1;
   }
   100%{
-          transform: translate(-73%, -49%);
-          z-index: -1;
+         left:-20%;
+          z-index: 0;
+          top: 20%;
   }
 
 }
