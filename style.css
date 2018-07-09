@@ -13,6 +13,7 @@
   position: absolute;
   top: -20%;
   left: 50%;
+  width: 7vw;
   animation-name: comet;
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
@@ -63,6 +64,7 @@
   position: absolute;
   top: -20%;
   left: 100%;
+  width: 7vw;
   animation-name: comet_position2;
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
@@ -79,17 +81,20 @@ body {
   background: red; }
 
 .diagram {
-  background: #0000ff30;
   width: 13vw;
   position: absolute;
   height: 12.3vw;
-  left: 10.5vw;
-  top: 7.4vw;
-  z-index: 2; }
+  left: 8.5vw;
+  top: 4.4vw;
+  z-index: 2;
+  overflow: hidden;
+  overflow: hidden; }
   .diagram .sircules {
     position: absolute;
     border-radius: 50px;
     width: 28%;
+    z-index: 3;
+    cursor: pointer;
     height: 28%;
     border: 0.4vw solid #7b2d47; }
     .diagram .sircules .circule1 {
@@ -112,7 +117,13 @@ body {
       border-radius: 50px; }
   .diagram .progrers_sectors {
     width: inherit;
-    height: inherit; }
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s; }
+    .diagram .progrers_sectors.closed {
+      width: 0px;
+      height: 0px; }
     .diagram .progrers_sectors .sector1 {
       width: 160%;
       border-radius: 50%;
@@ -120,11 +131,11 @@ body {
       border: 2.2vw solid;
       right: 0px;
       right: -99%;
-      top: 0%;
+      top: -4%;
       height: 160%;
-      border: 2.3vw solid red;
-      border-bottom: 2.3vw solid black;
-      transform: translate(-50%, -50%) rotate(-44deg); }
+      border: 2.3vw solid #732d46db;
+      border-bottom: 2.3vw solid #4b5f96e3;
+      transform: translate(-50%, -50%) rotate(-90deg); }
       .diagram .progrers_sectors .sector1:after {
         width: inherit;
         height: inherit;
@@ -133,6 +144,19 @@ body {
         border-radius: 1000px;
         border: 2.2vw solid red;
         border-bottom: #fff; }
+    .diagram .progrers_sectors .sector2 {
+      width: 112%;
+      height: 112%;
+      right: -51%;
+      transform: translate(-50%, -50%) rotate(-102deg);
+      border: 2.3vw solid #3e5e4b;
+      border-bottom: 2.3vw solid #fcf1cd; }
+    .diagram .progrers_sectors .sector3 {
+      width: 50%;
+      height: 50%;
+      border: 1px solid #fff;
+      border-bottom-right-radius: 155px;
+      border-top-left-radius: 5vw; }
 
 .diacramisskechi {
   position: absolute;
@@ -208,6 +232,18 @@ body {
   .steps_perent div {
     cursor: pointer;
     transition: 0.3s; }
+    .steps_perent div.active {
+      display: inline-block;
+      width: 40vw;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      z-index: 2;
+      position: absolute; }
+      .steps_perent div.active .point_boll {
+        width: 7.5vw; }
+        .steps_perent div.active .point_boll.disabled {
+          pointer-events: none;
+          cursor: default; }
     .steps_perent div:hover {
       filter: hue-rotate(20deg); }
       .steps_perent div:hover img {
@@ -219,6 +255,26 @@ body {
 .steps_perent div a:hover {
   transform: translateY(-5px); }
 
+.planet_with_child.planet2 {
+  top: 73vh;
+  left: 47vw;
+  width: 8vw;
+  animation-name: planet_with_child2;
+  animation-duration: 140s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
+
+@keyframes planet_with_child2 {
+  0% {
+    transform: translate(0px); }
+  25% {
+    transform: translate(-400px, 180px); }
+  50% {
+    transform: translate(400px, -60px); }
+  75% {
+    transform: translate(-400px, 180px); }
+  100% {
+    transform: translate(0px); } }
 .planet_with_child {
   position: absolute;
   top: 10vw;
@@ -253,6 +309,26 @@ body {
     transform: translate(400px, -60px); }
   75% {
     transform: translate(-200px, -80px); }
+  100% {
+    transform: translate(0px); } }
+.planet_with_child3 {
+  top: 73vh;
+  left: 77vw;
+  width: 9vw;
+  animation-name: planet_with_child3;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
+
+@keyframes planet_with_child3 {
+  0% {
+    transform: translate(0px); }
+  25% {
+    transform: translate(-300px, -180px); }
+  50% {
+    transform: translate(100px, 60px); }
+  75% {
+    transform: translate(-300px, -180px); }
   100% {
     transform: translate(0px); } }
 @keyframes small_planet {
@@ -311,6 +387,9 @@ body {
     position: absolute;
     width: 2.5vw;
     display: inline-block; }
+    .mth .point_boll.disabled {
+      pointer-events: none;
+      cursor: default; }
     .mth .point_boll img {
       width: 100%; }
   .mth .checkpoints1 {
@@ -553,5 +632,39 @@ body {
     left: 75.9vw;
     top: 14.7vw;
     position: absolute; }
+
+@media only screen and (max-width: 950px) {
+  .steps_perent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 11vw; }
+
+  .diagram .progrers_sectors .sector3 {
+    border-top-left-radius: 9vw; }
+
+  .diagram {
+    top: 12vw; } }
+@media only screen and (max-width: 600px) {
+  .mth {
+    position: relative; }
+
+  .diagram {
+    top: 20vw; }
+
+  .steps_perent {
+    top: 26vw; }
+
+  .subjects_nav ul a {
+    padding: 5px 0px; }
+
+  .planet_with_child3 {
+    top: 50vh; }
+
+  .mth .point_boll {
+    transform: translateY(-4px); }
+
+  .diagram .progrers_sectors .sector3 {
+    border-top-left-radius: 12vw; } }
 
 /*# sourceMappingURL=style.css.map */

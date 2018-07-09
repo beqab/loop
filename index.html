@@ -17,7 +17,7 @@
 </head>
 
 <body class="mth">
-<img class="diacramisskechi" style="" src="images/diagrama.png">
+<!-- <img class="diacramisskechi" style="" src="images/diagrama.png"> -->
 
 
   <div class="diagram">
@@ -29,16 +29,18 @@
            
          </div>
       </div>
-      <div class="progrers_sectors">
+      <div class="progrers_sectors ">
            
       <div class="sector1">
-      <div style="background: red;width: 2px;height: 2px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50px;">
-        
-      </div>
+      
 
       </div>
 
-
+       <div class="sector1 sector2">
+      
+      </div>
+      <div class="sector3">    
+      </div>
 
       </div>
   </div>
@@ -59,6 +61,22 @@
 <!-- comets -->
   <img class="comet comet_position" src="images/star3.png"> 
 <script type="text/javascript">
+
+
+  $('.sircules').click(function(){
+
+    if($('.progrers_sectors').hasClass('closed')){
+    $('.progrers_sectors').removeClass('closed')
+    }
+    else{
+      
+         $('.progrers_sectors').addClass('closed')
+    }
+  })
+
+
+
+  // *************************************
 var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined || 
                             document.body.style['MozPerspective'] !== undefined;
 
@@ -85,7 +103,7 @@ linkify( '.nav_a' );
 
  
    
-  
+  if( $(window).width() > 600){
 function doSomething(rand, rand2, startype) {
   setTimeout(function(){
        $('body.mth').append('<img class="comet comet_position" src="images/star'+startype+'.png"> ')
@@ -109,8 +127,11 @@ function doSomething(rand, rand2, startype) {
 
     }, rand);
 }());
+
+}
   
  
+
 
 
 </script>
@@ -118,12 +139,26 @@ function doSomething(rand, rand2, startype) {
 <!-- comets -->
  <!-- planets -->
     <img class="planet3" src="images/planet3.png">
+
    
 
      <div class="planet_with_child">
          <img class="big_planet" src="images/planet.png">
          <img class="small_planet" src="images/planrt2.png">
     </div>
+
+
+    <div class="planet_with_child planet2">
+         <img class="big_planet" src="images/planet4.png">
+         <img class="small_planet" src="images/childplanet2.png">
+    </div>
+
+
+     <div class="planet_with_child planet_with_child3">
+         <img class="big_planet" src="images/planet.png">
+         <img class="small_planet" src="images/planrt2.png">
+    </div>
+
  <!--/////////////// planets -->
 
 
@@ -308,7 +343,7 @@ function doSomething(rand, rand2, startype) {
      <div class="step1">
          <img class="step_bg" src="images/step1.png">
 
-        <a class="point_boll checkpoints1" href="#">
+        <a class="point_boll checkpoints1" href="1">
         <img src="images/checkmth.png">
         </a>
 
@@ -379,6 +414,40 @@ function doSomething(rand, rand2, startype) {
  </div>
     <div id="container"></div>
     <script type="text/javascript">
+
+$(window).on("load resize", function(){
+    
+     if( $(window).width() < 600){
+          $('.steps_perent > div').each(function(){
+            $('.steps_perent > div > a').addClass('disabled')
+     $(this).click(function(e){
+
+         e.stopPropagation();
+         $(this).children('a').removeClass('disabled')
+         $('.steps_perent > div').removeClass('active')
+       $(this).addClass('active')
+     })
+ })
+
+  $(window).click(function(){
+      if($('.steps_perent > div').hasClass('active')){
+         $('.steps_perent > div').removeClass('active')
+      }
+  })
+
+}
+
+
+
+
+
+
+
+})
+     
+
+
+      // *************************
     var camera, scene, renderer;
 
       var texture_placeholder,
