@@ -813,7 +813,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#AAE8FF), to(#004E6A));
   background: linear-gradient(#AAE8FF, #004E6A); }
@@ -1428,5 +1428,4 @@
     display: inline-block;
     -webkit-transform: translateY(-0.59vw);
             transform: translateY(-0.59vw); } }
-
 /*# sourceMappingURL=style.css.map */
