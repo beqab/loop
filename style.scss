@@ -1520,3 +1520,13 @@ transform: translate(5px, -5px);
     border-top-left-radius: 12vw;
 }
 }
+@media only screen and (max-width: 540px) {
+  .qart .checkpoint_qart {
+    position: absolute;
+    width: 3%;
+    display: inline-block;
+    transform: translateY(-0.59vw);
+}
+
+
+}
