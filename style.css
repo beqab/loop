@@ -1420,7 +1420,9 @@
     border-top-left-radius: 12vw; }
 
   .qart .steps_perent_qart {
-    top: 70%; } }
+    top: 20vw;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); } }
 @media only screen and (max-width: 540px) {
   .qart .checkpoint_qart {
     position: absolute;
@@ -1428,4 +1430,5 @@
     display: inline-block;
     -webkit-transform: translateY(-0.59vw);
             transform: translateY(-0.59vw); } }
+
 /*# sourceMappingURL=style.css.map */

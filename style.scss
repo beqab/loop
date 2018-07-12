@@ -1524,8 +1524,9 @@ transform: translate(5px, -5px);
   .diagram .progrers_sectors .sector3 {
     border-top-left-radius: 12vw;
 }
-.qart .steps_perent_qart{
-      top: 70%;
+.qart .steps_perent_qart {
+    top: 20vw;
+    transform: translateX(-50%);
 }
 }
 @media only screen and (max-width: 540px) {
