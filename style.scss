@@ -1492,6 +1492,11 @@ transform: translate(5px, -5px);
 }
 }
 
+@media only screen and (max-width: 700px) {
+.qart .steps_perent_qart{
+      top: 70%;
+}
+}
 @media only screen and (max-width: 600px) {
 
 
@@ -1518,6 +1523,9 @@ transform: translate(5px, -5px);
   }
   .diagram .progrers_sectors .sector3 {
     border-top-left-radius: 12vw;
+}
+.qart .steps_perent_qart{
+      top: 70%;
 }
 }
 @media only screen and (max-width: 540px) {
