@@ -77,18 +77,13 @@
   100% {
     left: -20%;
     top: 40%; } }
-body {
-  background: red; }
-
 .diagram {
   width: 13vw;
   position: absolute;
   height: 12.3vw;
   left: 8.5vw;
   top: 4.4vw;
-  z-index: 2;
-  overflow: hidden;
-  overflow: hidden; }
+  z-index: 2; }
   .diagram .sircules {
     position: absolute;
     border-radius: 50px;
@@ -125,16 +120,16 @@ body {
       width: 0px;
       height: 0px; }
     .diagram .progrers_sectors .sector1 {
-      width: 160%;
+      width: 144%;
       border-radius: 50%;
       position: absolute;
       border: 2.2vw solid;
       right: 0px;
-      right: -99%;
-      top: -4%;
-      height: 160%;
-      border: 2.3vw solid #732d46db;
-      border-bottom: 2.3vw solid #4b5f96e3;
+      right: -66%;
+      top: -6%;
+      height: 144%;
+      border: 1.3vw solid #732d46db;
+      border-bottom: 1.3vw solid #4b5f96e3;
       transform: translate(-50%, -50%) rotate(-90deg); }
       .diagram .progrers_sectors .sector1:after {
         width: inherit;
@@ -144,13 +139,26 @@ body {
         border-radius: 1000px;
         border: 2.2vw solid red;
         border-bottom: #fff; }
+    .diagram .progrers_sectors .sector4 {
+      width: 174%;
+      border-radius: 50%;
+      position: absolute;
+      border: 2.2vw solid;
+      right: 0px;
+      right: -96%;
+      top: -5%;
+      height: 174%;
+      border: 1.3vw solid #732d46db;
+      border-bottom: 1.3vw solid #4b5f96e3;
+      transform: translate(-50%, -50%) rotate(-90deg); }
     .diagram .progrers_sectors .sector2 {
-      width: 112%;
-      height: 112%;
-      right: -51%;
-      transform: translate(-50%, -50%) rotate(-102deg);
-      border: 2.3vw solid #3e5e4b;
-      border-bottom: 2.3vw solid #fcf1cd; }
+      width: 116%;
+      height: 116%;
+      right: -33%;
+      top: -2px;
+      transform: translate(-50%, -50%);
+      border: 1.3vw solid #3e5e4b;
+      border-bottom: 1.3vw solid #fcf1cd; }
     .diagram .progrers_sectors .sector3 {
       width: 50%;
       height: 50%;
@@ -206,7 +214,7 @@ body {
       color: #fff;
       text-decoration: none;
       font-family: 'Conv_DejaVuSans';
-      padding: 5px 10px;
+      padding: 5px 1px;
       font-size: calc(7px + 0.6vw);
       display: inline-block; }
   .subjects_nav .school_or_mine {
@@ -633,6 +641,421 @@ body {
     top: 14.7vw;
     position: absolute; }
 
+.qart {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#AAE8FF, #004E6A); }
+  .qart .subjects_nav ul a {
+    color: #000; }
+  .qart .subjects_nav ul li:before {
+    background: #000; }
+  .qart .subjects_nav .school_or_mine a {
+    color: #000; }
+  .qart .subjects_nav .school_or_mine a.active,
+  .qart .subjects_nav .school_or_mine a:hover {
+    background: #74A589;
+    border: 1px solid #000; }
+  .qart .steps_perent_qart {
+    position: absolute;
+    width: 70%;
+    height: 92%;
+    background-position: center;
+    background-size: 100%;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    background-repeat: no-repeat; }
+  .qart .checkpoint_qart {
+    transition: 0.3s; }
+  .qart .checkpoint_qart:hover {
+    transform: translateY(-5px) scale(1.1, 1.1); }
+  .qart .checkpoint_qart1 {
+    left: 39vw;
+    top: 32.3vw; }
+  .qart .checkpoint_qart2 {
+    left: 42vw;
+    top: 30.3vw; }
+  .qart .checkpoint_qart3 {
+    left: 45vw;
+    top: 29.3vw; }
+  .qart .checkpoint_qart4 {
+    left: 48vw;
+    top: 28.3vw; }
+  .qart .checkpoint_qart5 {
+    left: 51vw;
+    top: 26.8vw; }
+  .qart .checkpoint_qart6 {
+    left: 53.8vw;
+    top: 25.9vw; }
+  .qart .checkpoint_qart7 {
+    left: 57.3vw;
+    top: 24.5vw; }
+  .qart .checkpoint_qart8 {
+    left: 60.2vw;
+    top: 23.7vw; }
+  .qart .checkpoint_qart9 {
+    left: 60vw;
+    top: 18.3vw; }
+  .qart .checkpoint_qart10 {
+    left: 57.4vw;
+    top: 17.5vw; }
+  .qart .checkpoint_qart11 {
+    left: 54.7vw;
+    top: 16.8vw; }
+  .qart .checkpoint_qart12 {
+    left: 52vw;
+    top: 16vw; }
+  .qart .checkpoint_qart13 {
+    left: 49.3vw;
+    top: 16.6vw; }
+  .qart .checkpoint_qart14 {
+    left: 46.7vw;
+    top: 17.3vw; }
+  .qart .checkpoint_qart15 {
+    left: 44vw;
+    top: 18.1vw; }
+  .qart .checkpoint_qart16 {
+    left: 41vw;
+    top: 19vw; }
+  .qart .checkpoint_qart17 {
+    left: 37vw;
+    top: 19.8vw; }
+  .qart .checkpoint_qart18 {
+    left: 33.9vw;
+    top: 20.7vw; }
+  .qart .checkpoint_qart19 {
+    left: 29vw;
+    top: 21.2vw; }
+  .qart .checkpoint_qart20 {
+    left: 23vw;
+    top: 22.3vw; }
+  .qart .checkpoint_qart21 {
+    left: 11vw;
+    top: 24vw; }
+  .qart .checkpoint_qart22 {
+    left: 8vw;
+    top: 23.2vw; }
+  .qart .checkpoint_qart23 {
+    left: 5vw;
+    top: 22.1vw; }
+  .qart .checkpoint_qart24 {
+    left: 36vw;
+    top: 33.1vw; }
+  .qart .checkpoint_qart25 {
+    left: 9vw;
+    top: 20.9vw; }
+  .qart .checkpoint_qart26 {
+    left: 12.5vw;
+    top: 20vw; }
+  .qart .checkpoint_qart27 {
+    left: 22vw;
+    top: 17.3vw; }
+  .qart .checkpoint_qart28 {
+    left: 25vw;
+    top: 16.3vw; }
+  .qart .checkpoint_qart29 {
+    left: 28vw;
+    top: 15.3vw; }
+  .qart .checkpoint_qart30 {
+    left: 30vw;
+    top: 13.3vw; }
+  .qart .checkpoint_qart31 {
+    left: 33vw;
+    top: 12.3vw; }
+  .qart .checkpoint_qart32 {
+    left: 36vw;
+    top: 11.4vw; }
+  .qart .checkpoint_qart33 {
+    left: 38.9vw;
+    top: 10.5vw; }
+  .qart .checkpoint_qart34 {
+    left: 41.8vw;
+    top: 9.6vw; }
+  .qart .checkpoint_qart35 {
+    left: 45vw;
+    top: 10.3vw; }
+  .qart .checkpoint_qart36 {
+    left: 53vw;
+    top: 10.1vw; }
+  .qart .checkpoint_qart37 {
+    left: 55.6vw;
+    top: 9.3vw; }
+  .qart .checkpoint_qart38 {
+    left: 58vw;
+    top: 8.5vw; }
+  .qart .checkpoint_qart39 {
+    left: 54vw;
+    top: 7.4vw; }
+  .qart .checkpoint_qart40 {
+    left: 45.5vw;
+    top: 5vw; }
+  .qart .checkpoint_qart41 {
+    left: 45.5vw;
+    top: 5vw; }
+  .qart .checkpoint_qart42 {
+    left: 42.5vw;
+    top: 4.2vw; }
+  .qart .checkpoint_qart43 {
+    left: 36.5vw;
+    top: 6vw; }
+  .qart .checkpoint_qart44 {
+    left: 33.5vw;
+    top: 6.7vw; }
+  .qart .checkpoint_qart45 {
+    left: 30.5vw;
+    top: 7.2vw; }
+  .qart .checkpoint_qart46 {
+    left: 27.5vw;
+    top: 8vw; }
+  .qart .checkpoint_qart47 {
+    left: 24vw;
+    top: 8.3vw; }
+  .qart .checkpoint_qart48 {
+    left: 20.9vw;
+    top: 8.6vw; }
+  .qart .checkpoint_qart49 {
+    left: 18.2vw;
+    top: 9.2vw; }
+  .qart .checkpoint_qart50 {
+    left: 15.5vw;
+    top: 10vw; }
+  .qart .kingball {
+    position: absolute;
+    left: 30vw;
+    top: 34vw;
+    width: 1.8vw; }
+    .qart .kingball img {
+      width: 100%; }
+  .qart .checkpoint_qart {
+    position: absolute;
+    width: 3%;
+    display: inline-block; }
+    .qart .checkpoint_qart img {
+      width: 100%; }
+  .qart .claud1 {
+    position: absolute;
+    top: -4vw;
+    z-index: -1;
+    width: 31vw;
+    animation-name: claud1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
+@keyframes claud1 {
+  0% {
+    transform: translate(0, 0px); }
+  25% {
+    transform: translate(5px, 5px); }
+  50% {
+    transform: translate(10px, -5px); }
+  75% {
+    transform: translate(5px, -5px); }
+  100% {
+    transform: translate(0, 0px); } }
+  .qart .claud2 {
+    position: absolute;
+    top: 13vw;
+    left: 61vw;
+    z-index: 1;
+    width: 21vw;
+    animation-name: claud2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
+@keyframes claud2 {
+  0% {
+    transform: translate(0, 0px); }
+  25% {
+    transform: translate(5px, 5px); }
+  50% {
+    transform: translate(10px, -5px); }
+  75% {
+    transform: translate(5px, -5px); }
+  100% {
+    transform: translate(0, 0px); } }
+  .qart .claud3 {
+    position: absolute;
+    top: 13vw;
+    left: 55vw;
+    z-index: -1;
+    width: 10vw;
+    animation-name: claud3;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
+@keyframes claud3 {
+  0% {
+    transform: translate(0, 0px); }
+  25% {
+    transform: translate(-5px, 5px); }
+  50% {
+    transform: translate(10px, -5px); }
+  75% {
+    transform: translate(-5px, -5px); }
+  100% {
+    transform: translate(0, 0px); } }
+  .qart .claud4 {
+    position: absolute;
+    top: -1vw;
+    left: 40vw;
+    z-index: -1;
+    width: 20vw;
+    animation-name: claud4;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
+@keyframes claud4 {
+  0% {
+    transform: translate(0, 0px); }
+  25% {
+    transform: translate(-5px, 5px); }
+  50% {
+    transform: translate(10px, -5px); }
+  75% {
+    transform: translate(-5px, -5px); }
+  100% {
+    transform: translate(0, 0px); } }
+  .qart .claud5 {
+    position: absolute;
+    top: 11vw;
+    left: 2vw;
+    z-index: 0;
+    width: 17vw;
+    animation-name: claud5;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
+@keyframes claud5 {
+  0% {
+    transform: translate(0, 0px); }
+  25% {
+    transform: translate(5px, 5px); }
+  50% {
+    transform: translate(10px, -5px); }
+  75% {
+    transform: translate(5px, -5px); }
+  100% {
+    transform: translate(0, 0px); } }
+.steps_perent_qart .bbg {
+  width: 70vw; }
+
+.mtholimpiad {
+  position: absolute;
+  width: 101%;
+  height: 100%;
+  background: url(images/olimpiadmthbg.png);
+  background-size: cover;
+  background-position: center;
+  left: -1px;
+  top: 0px; }
+  .mtholimpiad .steps_perent a:hover {
+    filter: hue-rotate(30deg); }
+  .mtholimpiad .step0 {
+    width: 15vw;
+    display: inline-block;
+    position: absolute;
+    top: 24vw;
+    left: 9vw; }
+    .mtholimpiad .step0 img {
+      max-width: 100%; }
+  .mtholimpiad .step1 {
+    width: 15vw;
+    display: inline-block;
+    position: absolute;
+    top: 28vw;
+    left: 28vw; }
+    .mtholimpiad .step1 img {
+      max-width: 100%; }
+  .mtholimpiad .step2 {
+    width: 15vw;
+    display: inline-block;
+    position: absolute;
+    top: 16vw;
+    left: 36vw; }
+    .mtholimpiad .step2 img {
+      max-width: 100%; }
+  .mtholimpiad .step3 {
+    width: 15vw;
+    display: inline-block;
+    position: absolute;
+    top: 21vw;
+    left: 54vw; }
+    .mtholimpiad .step3 img {
+      max-width: 100%; }
+  .mtholimpiad .step4 {
+    width: 15vw;
+    display: inline-block;
+    position: absolute;
+    top: 25vw;
+    left: 73vw; }
+    .mtholimpiad .step4 img {
+      max-width: 100%; }
+
+.planet3 {
+  position: absolute;
+  left: 30vw;
+  width: 6vw;
+  top: 15vw;
+  animation-name: planet_3;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.07, -0.19, 1, 1); }
+
+@keyframes planet_3 {
+  0% {
+    transform: translate(0px); }
+  25% {
+    transform: translate(200px, 80px); }
+  50% {
+    transform: translate(400px, 60px); }
+  75% {
+    transform: translate(-200px, -80px); }
+  100% {
+    transform: translate(0px); } }
+.planet_with_child {
+  position: absolute;
+  top: 10vw;
+  width: 11vw;
+  left: 15vw;
+  animation-name: planet_with_child;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
+
+@keyframes planet_with_child {
+  0% {
+    transform: translate(0px); }
+  25% {
+    transform: translate(-200px, 80px); }
+  50% {
+    transform: translate(400px, -60px); }
+  75% {
+    transform: translate(-200px, -80px); }
+  100% {
+    transform: translate(0px); } }
+.planet_with_child.planet2 {
+  top: 73vh;
+  left: 47vw;
+  width: 8vw;
+  animation-name: planet_with_child2;
+  animation-duration: 140s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.19, -0.08, 0.79, 1.01); }
+
+@keyframes planet_with_child2 {
+  0% {
+    transform: translate(0px); }
+  25% {
+    transform: translate(-400px, 180px); }
+  50% {
+    transform: translate(400px, -60px); }
+  75% {
+    transform: translate(-400px, 180px); }
+  100% {
+    transform: translate(0px); } }
 @media only screen and (max-width: 950px) {
   .steps_perent {
     position: absolute;
