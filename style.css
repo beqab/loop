@@ -1419,8 +1419,11 @@
   .diagram .progrers_sectors .sector3 {
     border-top-left-radius: 12vw; }
 
+  .qart {
+    height: 80vw; }
+
   .qart .steps_perent_qart {
-    top: 20vw;
+    top: 17vw;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); } }
 @media only screen and (max-width: 540px) {
@@ -1430,5 +1433,4 @@
     display: inline-block;
     -webkit-transform: translateY(-0.59vw);
             transform: translateY(-0.59vw); } }
-
 /*# sourceMappingURL=style.css.map */
